@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.ScrollPane?>-->
+<!--<?import javafx.scene.control.Separator?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePageController">-->
+<!--   <children>-->
+<!--      <ScrollPane layoutY="136.0" prefHeight="595.0" prefWidth="237.0">-->
+<!--        <content>-->
+<!--          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="794.0" prefWidth="218.0">-->
+<!--               <children>-->
+<!--                  <VBox layoutX="4.0" layoutY="8.0" prefHeight="184.0" prefWidth="214.0">-->
+<!--                     <children>-->
+<!--                        <Label prefHeight="31.0" prefWidth="199.0" text="Search Player Details" />-->
+<!--                        <Button fx:id="Name" mnemonicParsing="false" onAction="#NamePressed" prefHeight="35.0" prefWidth="199.0" text="Name" />-->
+<!--                        <Button fx:id="Position" mnemonicParsing="false" onAction="#PositionPressed" prefHeight="35.0" prefWidth="200.0" text="Position" />-->
+<!--                        <Button fx:id="SearchByClubAndCountry" mnemonicParsing="false" onAction="#SearchByClubAndCountryPressed" prefHeight="35.0" prefWidth="199.0" text="Club and Country" />-->
+<!--                        <Button fx:id="SalaryRange" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Salary Range" />-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--                  <VBox layoutX="4.0" layoutY="204.0" prefHeight="197.0" prefWidth="208.0">-->
+<!--                     <children>-->
+<!--                        <Label prefHeight="31.0" prefWidth="197.0" text="Search Club Details" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="199.0" text="Maximum Height" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Maximum Age" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Maximum Salary" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" text="Total Salary" />-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--                  <Separator layoutX="-2.0" layoutY="190.0" prefHeight="10.0" prefWidth="210.0" />-->
+<!--                  <Separator layoutX="2.0" layoutY="398.0" prefHeight="3.0" prefWidth="201.0" />-->
+<!--                  <VBox layoutX="3.0" layoutY="413.0" prefHeight="200.0" prefWidth="211.0">-->
+<!--                     <children>-->
+<!--                        <Label prefHeight="31.0" prefWidth="201.0" text="Search Club Details" />-->
+<!--                        <Button fx:id="Market" mnemonicParsing="false" onAction="#ShowMarketPressed" prefHeight="35.0" prefWidth="201.0" text="Buy Player" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="202.0" text="Maximum Height" />-->
+<!--                        <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="203.0" text="Maximum Height" />-->
+<!--                     </children>-->
+<!--                  </VBox>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--        </content>-->
+<!--      </ScrollPane>-->
+<!--      <TextField fx:id="Search1" layoutX="689.0" layoutY="73.0" prefHeight="25.0" prefWidth="225.0" />-->
+<!--      <AnchorPane layoutX="237.0" layoutY="141.0" prefHeight="595.0" prefWidth="693.0">-->
+<!--         <children>-->
+<!--            <ScrollPane fx:id="scroll" layoutY="7.0" prefHeight="668.0" prefWidth="693.0" style="-fx-background-color: lightblue;">-->
+<!--               <content>-->
+<!--                  <GridPane fx:id="grid" prefHeight="4005.0" prefWidth="676.0">-->
+<!--                    <columnConstraints>-->
+<!--                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--                    </columnConstraints>-->
+<!--                  </GridPane>-->
+<!--               </content>-->
+<!--            </ScrollPane>-->
+<!--         </children>-->
+<!--      </AnchorPane>-->
+<!--      <TextField fx:id="Search2" layoutX="689.0" layoutY="47.0" prefHeight="25.0" prefWidth="225.0" visible="false" />-->
+<!--      <Button fx:id="Cancel" layoutX="863.0" layoutY="111.0" mnemonicParsing="false" onAction="#CancelPressed" text="Cancel" visible="false" />-->
+<!--      <Button fx:id="Search" layoutX="802.0" layoutY="111.0" mnemonicParsing="false" onAction="#SearchPressed" text="Search" visible="false" />-->
+<!--   </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #002D62;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomePageController">
+   <children>
+      <ScrollPane layoutY="136.0" prefHeight="595.0" prefWidth="237.0" style="-fx-background-color: #001A44;">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="794.0" prefWidth="218.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="192.0" prefWidth="218.0" style="-fx-background-color: #002D62; -fx-border-color: black; -fx-border-width: 4;">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="199.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Search Player Details">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font></Label>
+                        <Button fx:id="Name" mnemonicParsing="false" onAction="#NamePressed" prefHeight="35.0" prefWidth="199.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 1;" text="Name">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="Position" mnemonicParsing="false" onAction="#PositionPressed" prefHeight="35.0" prefWidth="199.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 1;" text="Position">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="SearchByClubAndCountry" mnemonicParsing="false" onAction="#SearchByClubAndCountryPressed" prefHeight="35.0" prefWidth="199.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 1;" text="Club and Country">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="SalaryRange" mnemonicParsing="false" onAction="#SalaryRangePressed" prefHeight="35.0" prefWidth="199.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black; -fx-border-width: 1;" text="Salary Range">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Separator prefHeight="7.0" prefWidth="219.0" style="-fx-background-color: black;" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="192.0" prefHeight="210.0" prefWidth="219.0" style="-fx-background-color: #002D62; -fx-border-color: black; -fx-border-width: 4;">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="197.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Search Club Details">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font></Label>
+                        <Button fx:id="MaximumHeight" mnemonicParsing="false" onAction="#MaximumHeightPressed" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black;" text="Maximum Height">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="MaximumAge" mnemonicParsing="false" onAction="#MaximumAgePressed" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black;" text="Maximum Age">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="MaximumSalary" mnemonicParsing="false" onAction="#MaximumSalaryPressed" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black;" text="Maximum Salary">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="AddPlayerButton" mnemonicParsing="false" onAction="#AddPlayerPressed" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-color: black;" text="Add Player">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                        <Separator prefHeight="7.0" prefWidth="217.0" style="-fx-background-color: black;" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="402.0" prefHeight="215.0" prefWidth="218.0" style="-fx-background-color: #002D62; -fx-border-color: black; -fx-border-width: 4;">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="201.0" style="-fx-text-fill: white; -fx-font-weight: bold;" text="Market">
+                           <font>
+                              <Font name="Times New Roman Bold" size="16.0" />
+                           </font></Label>
+                        <Button fx:id="Market" mnemonicParsing="false" onAction="#ShowMarketPressed" prefHeight="35.0" prefWidth="201.0" style="-fx-background-color: #EAD8B1; -fx-text-fill: black; -fx-border-width: 1; -fx-border-color: black;" text="Buy Player">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="Search1" layoutX="689.0" layoutY="73.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-border-color: black; -fx-border-width: 2;" />
+      <AnchorPane layoutX="237.0" layoutY="141.0" prefHeight="595.0" prefWidth="693.0" style="-fx-background-color: #001A44;">
+         <children>
+            <ScrollPane fx:id="scroll" layoutY="7.0" prefHeight="668.0" prefWidth="693.0" style="-fx-background-color: lightblue;">
+               <content>
+                  <GridPane fx:id="grid" prefHeight="4005.0" prefWidth="676.0" style="-fx-background-color: #FFFFFF;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="Search2" layoutX="689.0" layoutY="47.0" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-border-color: black; -fx-border-width: 2;" visible="false" />
+      <Button fx:id="Cancel" layoutX="863.0" layoutY="111.0" mnemonicParsing="false" onAction="#CancelPressed" style="-fx-background-color: #FF4500; -fx-text-fill: white;" text="Cancel" visible="false" />
+      <Button fx:id="Search" layoutX="802.0" layoutY="111.0" mnemonicParsing="false" onAction="#SearchPressed" style="-fx-background-color: #FF4500; -fx-text-fill: white;" text="Search" visible="false" />
+      <Label fx:id="ClubName" contentDisplay="CENTER" layoutX="140.0" layoutY="47.0" prefHeight="57.0" prefWidth="435.0" text="Royal Challangers Bangalore" textFill="#ead8b1">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ClubLogo" fitHeight="82.0" fitWidth="124.0" layoutX="37.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

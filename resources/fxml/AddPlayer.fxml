@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: #3D8D7A;"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddPlayerController">
+
+    <!-- Dialog Header -->
+    <header>
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Add Player" />
+    </header>
+
+    <!-- Dialog Content -->
+    <content>
+        <VBox spacing="15">
+
+            <!-- Player Details Inputs -->
+            <HBox spacing="20">
+                <VBox spacing="5">
+                    <Label text="Player Name:"/>
+                    <TextField fx:id="PlayerNameField" promptText="Enter Name"/>
+                </VBox>
+                <VBox spacing="5">
+                    <Label text="Country:"/>
+                    <TextField fx:id="PlayerCountryField" promptText="Enter Country"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="20">
+                <VBox spacing="5">
+                    <Label text="Age:"/>
+                    <TextField fx:id="PlayerAgeField" promptText="Enter Age"/>
+                </VBox>
+                <VBox spacing="5">
+                    <Label text="Position:"/>
+                    <TextField fx:id="PlayerPositionField" promptText="Enter Position"/>
+                </VBox>
+            </HBox>
+
+            <Separator/>
+
+            <!-- Player Attributes Inputs -->
+            <HBox spacing="20">
+                <VBox spacing="5">
+                    <Label text="Number:"/>
+                    <TextField fx:id="PlayerNumberField" promptText="Enter Number"/>
+                </VBox>
+                <VBox spacing="5">
+                    <Label text="Height:"/>
+                    <TextField fx:id="PlayerHeightField" promptText="Enter Height"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="20">
+                <VBox spacing="5">
+                    <Label text="Salary:"/>
+                    <TextField fx:id="PlayerSalaryField" promptText="Enter Salary"/>
+                </VBox>
+            </HBox>
+
+            <!-- Buttons -->
+            <HBox spacing="15">
+                <Button fx:id="AddPlayerButton" text="Add Player" onAction="#AddPlayer"/>
+                <Button fx:id="CancelButton" text="Cancel" onAction="#Cancel"/>
+            </HBox>
+
+        </VBox>
+    </content>
+</DialogPane>
+
